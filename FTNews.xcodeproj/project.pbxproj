@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AE6C0C1D28B1C34103C4783 /* Pods_FTNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03527C1C6C35B691F108B4F /* Pods_FTNews.framework */; };
 		B0198DC724E985FE001CD858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0198DC624E985FE001CD858 /* AppDelegate.swift */; };
 		B0198DC924E985FE001CD858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0198DC824E985FE001CD858 /* SceneDelegate.swift */; };
 		B0198DCB24E985FE001CD858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0198DCA24E985FE001CD858 /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		B0198DD124E985FE001CD858 /* FTNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0198DCF24E985FE001CD858 /* FTNews.xcdatamodeld */; };
 		B0198DD324E98603001CD858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0198DD224E98603001CD858 /* Assets.xcassets */; };
 		B0198DD624E98603001CD858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0198DD424E98603001CD858 /* LaunchScreen.storyboard */; };
+		B0198DDE24EBCE4D001CD858 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B0198DDD24EBCE4D001CD858 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		009EB9E52A30BEA15EACC4AA /* Pods-FTNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTNews.debug.xcconfig"; path = "Target Support Files/Pods-FTNews/Pods-FTNews.debug.xcconfig"; sourceTree = "<group>"; };
 		B0198DC324E985FE001CD858 /* FTNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0198DC624E985FE001CD858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0198DC824E985FE001CD858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		B0198DD224E98603001CD858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0198DD524E98603001CD858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0198DD724E98603001CD858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0198DDD24EBCE4D001CD858 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC00A0F8D5FFB2F3206A48DE /* Pods-FTNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTNews.release.xcconfig"; path = "Target Support Files/Pods-FTNews/Pods-FTNews.release.xcconfig"; sourceTree = "<group>"; };
+		C03527C1C6C35B691F108B4F /* Pods_FTNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE6C0C1D28B1C34103C4783 /* Pods_FTNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +49,11 @@
 		B0198DBA24E985FE001CD858 = {
 			isa = PBXGroup;
 			children = (
+				B0198DDD24EBCE4D001CD858 /* Podfile */,
 				B0198DC524E985FE001CD858 /* FTNews */,
 				B0198DC424E985FE001CD858 /* Products */,
+				D445EC1E3BB234B9C5C3141D /* Pods */,
+				B5804CD906A4A4217C494B74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +80,23 @@
 			path = FTNews;
 			sourceTree = "<group>";
 		};
+		B5804CD906A4A4217C494B74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C03527C1C6C35B691F108B4F /* Pods_FTNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D445EC1E3BB234B9C5C3141D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				009EB9E52A30BEA15EACC4AA /* Pods-FTNews.debug.xcconfig */,
+				BC00A0F8D5FFB2F3206A48DE /* Pods-FTNews.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0198DDA24E98603001CD858 /* Build configuration list for PBXNativeTarget "FTNews" */;
 			buildPhases = (
+				3247F89310DD7F080D55E939 /* [CP] Check Pods Manifest.lock */,
 				B0198DBF24E985FE001CD858 /* Sources */,
 				B0198DC024E985FE001CD858 /* Frameworks */,
 				B0198DC124E985FE001CD858 /* Resources */,
+				A2792DD0EBE54A16E1FC2051 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,54 @@
 			files = (
 				B0198DD624E98603001CD858 /* LaunchScreen.storyboard in Resources */,
 				B0198DD324E98603001CD858 /* Assets.xcassets in Resources */,
+				B0198DDE24EBCE4D001CD858 /* Podfile in Resources */,
 				B0198DCE24E985FE001CD858 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3247F89310DD7F080D55E939 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FTNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2792DD0EBE54A16E1FC2051 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FTNews/Pods-FTNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FTNews/Pods-FTNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FTNews/Pods-FTNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0198DBF24E985FE001CD858 /* Sources */ = {
@@ -286,6 +358,7 @@
 		};
 		B0198DDB24E98603001CD858 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 009EB9E52A30BEA15EACC4AA /* Pods-FTNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +377,7 @@
 		};
 		B0198DDC24E98603001CD858 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC00A0F8D5FFB2F3206A48DE /* Pods-FTNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

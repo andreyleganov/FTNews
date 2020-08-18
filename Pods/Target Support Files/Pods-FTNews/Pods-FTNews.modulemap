@@ -1,0 +1,6 @@
+framework module Pods_FTNews {
+  umbrella header "Pods-FTNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
