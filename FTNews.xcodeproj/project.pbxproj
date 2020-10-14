@@ -9,27 +9,39 @@
 /* Begin PBXBuildFile section */
 		4AE6C0C1D28B1C34103C4783 /* Pods_FTNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03527C1C6C35B691F108B4F /* Pods_FTNews.framework */; };
 		B0198DC724E985FE001CD858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0198DC624E985FE001CD858 /* AppDelegate.swift */; };
-		B0198DC924E985FE001CD858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0198DC824E985FE001CD858 /* SceneDelegate.swift */; };
-		B0198DCB24E985FE001CD858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0198DCA24E985FE001CD858 /* ViewController.swift */; };
-		B0198DCE24E985FE001CD858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0198DCC24E985FE001CD858 /* Main.storyboard */; };
 		B0198DD124E985FE001CD858 /* FTNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0198DCF24E985FE001CD858 /* FTNews.xcdatamodeld */; };
 		B0198DD324E98603001CD858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0198DD224E98603001CD858 /* Assets.xcassets */; };
 		B0198DD624E98603001CD858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0198DD424E98603001CD858 /* LaunchScreen.storyboard */; };
 		B0198DDE24EBCE4D001CD858 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B0198DDD24EBCE4D001CD858 /* Podfile */; };
+		B0198E0024EC40C0001CD858 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0198DFF24EC40C0001CD858 /* UIColor+hex.swift */; };
+		B06A014E2535FA75005C3B81 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06A014D2535FA75005C3B81 /* TodayView.swift */; };
+		B0ED5B7F2524CF5E001617B7 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED5B7E2524CF5E001617B7 /* TabItem.swift */; };
+		B0ED5B862524D5EF001617B7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED5B852524D5EF001617B7 /* SearchViewController.swift */; };
+		B0ED5B892524D631001617B7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED5B882524D631001617B7 /* TodayViewController.swift */; };
+		B0ED5B8C2524D65D001617B7 /* MyFTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED5B8B2524D65D001617B7 /* MyFTViewController.swift */; };
+		B0ED5B8F2524D677001617B7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED5B8E2524D677001617B7 /* MenuViewController.swift */; };
+		B0ED5B922524D6C1001617B7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED5B912524D6C1001617B7 /* TabBarController.swift */; };
+		B0ED5B952524D815001617B7 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED5B942524D815001617B7 /* TabNavigationMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		009EB9E52A30BEA15EACC4AA /* Pods-FTNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTNews.debug.xcconfig"; path = "Target Support Files/Pods-FTNews/Pods-FTNews.debug.xcconfig"; sourceTree = "<group>"; };
 		B0198DC324E985FE001CD858 /* FTNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0198DC624E985FE001CD858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0198DC824E985FE001CD858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0198DCA24E985FE001CD858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B0198DCD24E985FE001CD858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0198DD024E985FE001CD858 /* FTNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FTNews.xcdatamodel; sourceTree = "<group>"; };
 		B0198DD224E98603001CD858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0198DD524E98603001CD858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0198DD724E98603001CD858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0198DDD24EBCE4D001CD858 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0198DFF24EC40C0001CD858 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		B06A014D2535FA75005C3B81 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		B0ED5B7E2524CF5E001617B7 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		B0ED5B852524D5EF001617B7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B0ED5B882524D631001617B7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B0ED5B8B2524D65D001617B7 /* MyFTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFTViewController.swift; sourceTree = "<group>"; };
+		B0ED5B8E2524D677001617B7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B0ED5B912524D6C1001617B7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B0ED5B942524D815001617B7 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
 		BC00A0F8D5FFB2F3206A48DE /* Pods-FTNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTNews.release.xcconfig"; path = "Target Support Files/Pods-FTNews/Pods-FTNews.release.xcconfig"; sourceTree = "<group>"; };
 		C03527C1C6C35B691F108B4F /* Pods_FTNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -68,16 +80,102 @@
 		B0198DC524E985FE001CD858 /* FTNews */ = {
 			isa = PBXGroup;
 			children = (
-				B0198DC624E985FE001CD858 /* AppDelegate.swift */,
-				B0198DC824E985FE001CD858 /* SceneDelegate.swift */,
-				B0198DCA24E985FE001CD858 /* ViewController.swift */,
-				B0198DCC24E985FE001CD858 /* Main.storyboard */,
+				B0ED5B7D2524CF3E001617B7 /* TabBar */,
+				B0198DDF24EBD1A7001CD858 /* Flow */,
+				B0198DE124EBD20E001CD858 /* Library */,
+				B08EE3C425093B0E0082E055 /* AppDelegate */,
 				B0198DD224E98603001CD858 /* Assets.xcassets */,
 				B0198DD424E98603001CD858 /* LaunchScreen.storyboard */,
 				B0198DD724E98603001CD858 /* Info.plist */,
 				B0198DCF24E985FE001CD858 /* FTNews.xcdatamodeld */,
 			);
 			path = FTNews;
+			sourceTree = "<group>";
+		};
+		B0198DDF24EBD1A7001CD858 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				B0ED5B812524D599001617B7 /* Search */,
+				B0ED5B842524D5C8001617B7 /* Today */,
+				B0ED5B832524D5C1001617B7 /* MyFT */,
+				B0ED5B822524D5B0001617B7 /* Menu */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		B0198DE124EBD20E001CD858 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B0198DFE24EC409E001CD858 /* Extensions */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B0198DFE24EC409E001CD858 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0198DFF24EC40C0001CD858 /* UIColor+hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B06A014C2535FA65005C3B81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B06A014D2535FA75005C3B81 /* TodayView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B08EE3C425093B0E0082E055 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B0198DC624E985FE001CD858 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B0ED5B7D2524CF3E001617B7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B0ED5B7E2524CF5E001617B7 /* TabItem.swift */,
+				B0ED5B912524D6C1001617B7 /* TabBarController.swift */,
+				B0ED5B942524D815001617B7 /* TabNavigationMenu.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B0ED5B812524D599001617B7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B0ED5B852524D5EF001617B7 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B0ED5B822524D5B0001617B7 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B0ED5B8E2524D677001617B7 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B0ED5B832524D5C1001617B7 /* MyFT */ = {
+			isa = PBXGroup;
+			children = (
+				B0ED5B8B2524D65D001617B7 /* MyFTViewController.swift */,
+			);
+			path = MyFT;
+			sourceTree = "<group>";
+		};
+		B0ED5B842524D5C8001617B7 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				B06A014C2535FA65005C3B81 /* View */,
+				B0ED5B882524D631001617B7 /* TodayViewController.swift */,
+			);
+			path = Today;
 			sourceTree = "<group>";
 		};
 		B5804CD906A4A4217C494B74 /* Frameworks */ = {
@@ -160,7 +258,6 @@
 				B0198DD624E98603001CD858 /* LaunchScreen.storyboard in Resources */,
 				B0198DD324E98603001CD858 /* Assets.xcassets in Resources */,
 				B0198DDE24EBCE4D001CD858 /* Podfile in Resources */,
-				B0198DCE24E985FE001CD858 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,24 +310,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0198DCB24E985FE001CD858 /* ViewController.swift in Sources */,
+				B0ED5B8C2524D65D001617B7 /* MyFTViewController.swift in Sources */,
+				B0ED5B922524D6C1001617B7 /* TabBarController.swift in Sources */,
+				B0ED5B892524D631001617B7 /* TodayViewController.swift in Sources */,
 				B0198DC724E985FE001CD858 /* AppDelegate.swift in Sources */,
+				B06A014E2535FA75005C3B81 /* TodayView.swift in Sources */,
 				B0198DD124E985FE001CD858 /* FTNews.xcdatamodeld in Sources */,
-				B0198DC924E985FE001CD858 /* SceneDelegate.swift in Sources */,
+				B0ED5B862524D5EF001617B7 /* SearchViewController.swift in Sources */,
+				B0ED5B952524D815001617B7 /* TabNavigationMenu.swift in Sources */,
+				B0ED5B7F2524CF5E001617B7 /* TabItem.swift in Sources */,
+				B0198E0024EC40C0001CD858 /* UIColor+hex.swift in Sources */,
+				B0ED5B8F2524D677001617B7 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B0198DCC24E985FE001CD858 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0198DCD24E985FE001CD858 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B0198DD424E98603001CD858 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,10 +460,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMQ4ZK98M9;
 				INFOPLIST_FILE = FTNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = andreyleganov.FTNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -383,10 +481,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMQ4ZK98M9;
 				INFOPLIST_FILE = FTNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = andreyleganov.FTNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
