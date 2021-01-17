@@ -105,84 +105,52 @@ class TabNavigationMenu: UIView {
     }
     
     func activate(tab: Int) {
-        let tabToActivate = self.subviews[tab]
+        let tabBarItemView = self.subviews[tab]
         
-        switch tab {
-        case 0:
-            DispatchQueue.main.async {
-                UIView.animate(withDuration: 0.1, delay: 0.0, options: .allowUserInteraction) {
-                    
-                    tabToActivate.backgroundColor = UIColor(hex6: 0x8C80EB)
-                    tabToActivate.layer.shadowColor = UIColor(hex6: 0x8C80EB).cgColor
-                    tabToActivate.layer.shadowOpacity = 0.5
-                    tabToActivate.layer.shadowRadius = 5
-                    tabToActivate.layer.shadowOffset = CGSize(width: 0, height: 0)
-                    tabToActivate.tintColor = UIColor(hex6: 0xFFFFFF)
-                    tabToActivate.layoutIfNeeded()                    
+        DispatchQueue.main.async {
+            
+            self.itemTapped?(tab)
+            self.activeItem = tab
+            
+            UIView.animate(withDuration: 0.1, delay: 0.0, options: .allowUserInteraction) {
+                
+                tabBarItemView.layer.shadowOpacity = 0.5
+                tabBarItemView.layer.shadowRadius = 5
+                tabBarItemView.layer.shadowOffset = CGSize(width: 0, height: 0)
+                tabBarItemView.tintColor = UIColor(hex6: 0xFFFFFF)
+                tabBarItemView.layoutIfNeeded()
+                
+                
+                switch tab {
+                case 0:
+                    tabBarItemView.backgroundColor = UIColor(hex6: 0x8C80EB)
+                    tabBarItemView.layer.shadowColor = UIColor(hex6: 0x8C80EB).cgColor
+                case 1:
+                    tabBarItemView.backgroundColor = UIColor(hex6: 0xF2929B)
+                    tabBarItemView.layer.shadowColor = UIColor(hex6: 0xF2929B).cgColor
+                case 2:
+                    tabBarItemView.backgroundColor = UIColor(hex6: 0x6EE2C0)
+                    tabBarItemView.layer.shadowColor = UIColor(hex6: 0x6EE2C0).cgColor
+                case 3:
+                    tabBarItemView.backgroundColor = UIColor(hex6: 0x5CD0F7)
+                    tabBarItemView.layer.shadowColor = UIColor(hex6: 0x5CD0F7).cgColor
+                default:
+                    break
                 }
-                self.itemTapped?(tab)
             }
-            activeItem = tab
-        case 1:
-            DispatchQueue.main.async {
-                UIView.animateKeyframes(withDuration: 0.1, delay: 0.0, options: .allowUserInteraction) {
-                    
-                    tabToActivate.backgroundColor = UIColor(hex6: 0xF2929B)
-                    tabToActivate.layer.shadowColor = UIColor(hex6: 0xF2929B).cgColor
-                    tabToActivate.layer.shadowOpacity = 0.5
-                    tabToActivate.layer.shadowRadius = 5
-                    tabToActivate.layer.shadowOffset = CGSize(width: 0, height: 0)
-                    tabToActivate.tintColor = UIColor(hex6: 0xFFFFFF)
-                    tabToActivate.layoutIfNeeded()
-                }
-                self.itemTapped?(tab)
-            }
-            activeItem = tab
-        case 2:
-            DispatchQueue.main.async {
-                UIView.animateKeyframes(withDuration: 0.1, delay: 0.0, options: .allowUserInteraction) {
-                    
-                    tabToActivate.backgroundColor = UIColor(hex6: 0x6EE2C0)
-                    tabToActivate.layer.shadowColor = UIColor(hex6: 0x6EE2C0).cgColor
-                    tabToActivate.layer.shadowOpacity = 0.5
-                    tabToActivate.layer.shadowRadius = 5
-                    tabToActivate.layer.shadowOffset = CGSize(width: 0, height: 0)
-                    tabToActivate.tintColor = UIColor(hex6: 0xFFFFFF)
-                    tabToActivate.layoutIfNeeded()
-                }
-                self.itemTapped?(tab)
-            }
-            activeItem = tab
-        case 3:
-            DispatchQueue.main.async {
-                UIView.animateKeyframes(withDuration: 0.1, delay: 0.0, options: .allowUserInteraction) {
-                    
-                    tabToActivate.backgroundColor = UIColor(hex6: 0x5CD0F7)
-                    tabToActivate.layer.shadowColor = UIColor(hex6: 0x5CD0F7).cgColor
-                    tabToActivate.layer.shadowOpacity = 0.5
-                    tabToActivate.layer.shadowRadius = 5
-                    tabToActivate.layer.shadowOffset = CGSize(width: 0, height: 0)
-                    tabToActivate.tintColor = UIColor(hex6: 0xFFFFFF)
-                    tabToActivate.layoutIfNeeded()
-                }
-                self.itemTapped?(tab)
-            }
-            activeItem = tab
-        default:
-            break
         }
-        
+
     }
     
     func deactivate(tab: Int) {
-        let tabToInactive = self.subviews[tab]
+        let tabBarItemView = self.subviews[tab]
         
         DispatchQueue.main.async {
             UIView.animate(withDuration: 0.1, delay: 0.0, options: .allowUserInteraction) {
-                tabToInactive.backgroundColor = .clear
-                tabToInactive.tintColor = UIColor(hex6: 0xA9A9A9)
-                tabToInactive.layer.shadowColor = UIColor.clear.cgColor
-                tabToInactive.layoutIfNeeded()
+                tabBarItemView.backgroundColor = .clear
+                tabBarItemView.tintColor = UIColor(hex6: 0xA9A9A9)
+                tabBarItemView.layer.shadowColor = UIColor.clear.cgColor
+                tabBarItemView.layoutIfNeeded()
             }
         }
         
